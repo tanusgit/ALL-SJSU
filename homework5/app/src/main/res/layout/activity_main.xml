@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/prompt_image_url"
+            style="@style/Prompt.Style"
+            android:text="@string/prompt_image_url" />
+
+        <EditText
+            android:id="@+id/edit_image_url"
+            style="@style/Url.EditText.Style"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:id="@+id/run_runnable"
+            style="@style/Button.Style"
+            android:onClick="runRunnable"
+            android:textColor="#faf8f2"
+            android:text="Run runnable" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+        <Button
+            android:id="@+id/run_messages"
+            style="@style/Button.Style"
+            android:onClick="runMessages"
+            android:text="Run messages"
+            android:textColor="#faf8f2"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+        <Button
+            android:id="@+id/run_async_task"
+            style="@style/Button.Style"
+            android:onClick="runAsyncTask"
+            android:text="Run async"
+            android:textColor="#faf8f2"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+        <Button
+            android:id="@+id/reset_image"
+            style="@style/Button.Style"
+            android:onClick="resetImage"
+            android:text="@string/label_reset_image"
+            android:textColor="#faf8f2" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myImageoha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/myimage"
+            android:src="@drawable/redapple"
+            android:layout_width="320dp"
+            android:layout_height="500dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
